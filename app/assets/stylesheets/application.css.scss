@@ -17,7 +17,7 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
-@import 'font-awesome';
+@import 'font-awesome'; 
 
 // Typography styles
 h1, h2, h3 {
@@ -43,6 +43,11 @@ h1, h2, h3 {
 // Nav styles
 .navbar {
   border: none;
+}
+
+.navbar-brand {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
 }
 
 // Homepage styles
