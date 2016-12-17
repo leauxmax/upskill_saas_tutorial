@@ -59,13 +59,13 @@ background: linear-gradient(to left, #fffc00 , #ffffff); /* W3C, IE 10+/ Edge, F
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: white;
+  background-color: #ff00cc;
 }
 
 .navbar-default .navbar-toggle {
-  border: 2px solid white;
+  border: 2px solid #ff00cc;
   &:hover, &:focus {
-    background-color:#00c6ff;
+    background-color: white;  /*#00c6ff;*/
   }
 }
 
