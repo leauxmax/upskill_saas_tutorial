@@ -6,6 +6,6 @@ class ContactMailer < ActionMailer :: Base
     @email = email
     @body = body
     
-    mail(from: email, subject: 'Contact Form Message')
+    mail(from: email, subject: 'Peep comments.')
   end
 end 
