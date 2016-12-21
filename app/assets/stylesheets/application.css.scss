@@ -20,8 +20,9 @@
 @import 'font-awesome'; 
 
 // Typography styles
-h1, h2, h3 {
-   font-family: 'Open Sans', sans-serif;   
+h1, h2, h3, body {
+   font-family: 'Open Sans', sans-serif;  
+   color: #ff00cc
 }
 
 // Background gradient
@@ -69,6 +70,12 @@ background: linear-gradient(to left, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Fi
   }
 }
 
+.navbar-btn {
+  color: #ff00cc;
+  //margin-top: 8px;
+  //margin-bottom: 8px;
+}
+
 // Homepage styles
 .home-callout {
   color: #ff00cc;
@@ -86,7 +93,6 @@ background: linear-gradient(to left, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Fi
   background: rgba(255, 255, 255, 0.3);
   border-color: rgba(255, 255, 255, 0.5);
   margin-top: -14px;
-  font-size: 24;
 } 
 
 .content {
