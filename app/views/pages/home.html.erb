@@ -9,16 +9,15 @@
     <div class="col-md-6">
       <div class="well">
         <h2 class="text-center">Basic Membership</h2>
-        <h4 class="text-center"> Sign up for Basic account and get access to the community</h4>
-        <br>
+        <h4 class="text-center"> Be Basic for nuthin! 😜 </h4>
         <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-large btn-block' %>
       </div>
     </div>
     <div class="col-md-6">
       <div class="well">
         <h2 class="text-center">Preaux Membership</h2>
-        <h4 class="text-center"> Sign up for Preaux account and get access to the community & contact info! ($10/mo)</h4>
-        <%= link_to "Sign up with Preaux", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-large btn-block' %>
+        <h4 class="text-center"> Treat. Yo. Self. 💸 ($9/mo)</h4>
+        <%= link_to "Geaux Preaux", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-large btn-block' %>
       </div>
     </div>
   </div>
