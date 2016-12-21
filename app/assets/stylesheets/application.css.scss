@@ -40,6 +40,27 @@ background: linear-gradient(to left, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Fi
   // background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.btn-primary, .btn-primary:hover, .btn-primary:visited {
+    background-color: #ff00cc;
+     &:hover {
+    color: white;
+    opacity: 0.75;
+     }
+}
+
+.btn-primary:active, .btn-success:active {
+    background-color: #7d00ff !important;
+}
+
+.btn-success, .btn-success:hover, .btn-success:visited .btn-success:active:focus {
+    background-color: #52ffd1;
+     &:hover {
+    color: white;
+    opacity: 0.75;
+    box-shadow: none;
+     }
+}
+
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: #ff00cc;
@@ -57,6 +78,7 @@ background: linear-gradient(to left, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Fi
 .navbar-brand {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
+  margin-top: -10px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
