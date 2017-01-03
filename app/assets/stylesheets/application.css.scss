@@ -19,6 +19,7 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome'; 
 
+
 // Typography styles
 h1, h2, h3, body {
    font-family: 'Open Sans', sans-serif;  
@@ -26,22 +27,22 @@ h1, h2, h3, body {
 }
 
 // Background gradient
-.navbar, .home-callout {
+.navbar {
   
+  background-color: white !important;
+  
+  
+  
+// background: #52ffd1; /* fallback for old browsers */
+// background: -webkit-linear-gradient(to left, #ffffff, #52ffd1); /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to left, #ffffff, #52ffd1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-background: #52ffd1; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #ffffff, #52ffd1); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #ffffff, #52ffd1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+
   
   
   // background: #00c6ff; /* fallback for old browsers */
   // background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
   // background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.html {
-  background-color: #7d00ff !important;
 }
 
 .body {
@@ -51,10 +52,24 @@ background: linear-gradient(to left, #ffffff, #52ffd1); /* W3C, IE 10+/ Edge, Fi
 
 .btn-primary, .btn-primary:hover, .btn-primary:visited {
     background-color: #ff00cc;
+    border-color: #7DE3C8;
+  // &:after, &:before {
+  //   border-width: 33px 10px 0 0 !important;
+  // }
+  // &:before {
+  //   left: -10px;
+  //   border-color: transparent #7DE3C8 !important;;
+  // }
+  // &:after {
+  //   right: -10px;
+  // //   border-color: #7DE3C8 transparent !important;;
+  // }
+    
      &:hover {
     color: white;
     opacity: 0.75;
     box-shadow: none;
+    border: none;
     }
 }
 
@@ -125,11 +140,11 @@ background: linear-gradient(to left, #ffffff, #52ffd1); /* W3C, IE 10+/ Edge, Fi
   }
 }
 
-.navbar-btn {
-  color: #ff00cc;
-  //margin-top: 8px;
-  //margin-bottom: 8px;
-}
+// .navbar-btn {
+//   color: #ff00cc;
+//   //margin-top: 8px;
+//   //margin-bottom: 8px;
+// }
 
 // SPOTIFY plyr
 .navbar-music {
@@ -171,3 +186,37 @@ background: linear-gradient(to left, #ffffff, #52ffd1); /* W3C, IE 10+/ Edge, Fi
 .home-signup-links {
   margin-top: 30px;
 }
+
+.flag {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  padding-top: 15px;
+  position: relative; 
+  background: green;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  list-style:none;
+}
+
+.sheer {
+  // background-color: #7DE3C8;
+  // left: -5px;
+  // width: 170px;
+  // &:after, &:before {
+  //   border-width: 33px 10px 0 0;
+  // }
+  // &:before {
+  //   left: -10px;
+  //   border-color: transparent #7DE3C8;
+  // }
+  // &:after {
+  //   right: -10px;
+  //   border-color: #7DE3C8 transparent;
+  // }
+}
+
+

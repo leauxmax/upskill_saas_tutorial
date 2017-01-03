@@ -31,12 +31,12 @@ ActiveRecord::Schema.define(version: 20161222141329) do
     t.integer  "user_id"
     t.string   "first_name"
     t.string   "last_name"
-    t.string   "jig"
-    t.string   "whatsapp"
-    t.string   "snap"
+    t.string   "job_title"
+    t.string   "phone_number"
+    t.string   "contact_email"
     t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "users", force: :cascade do |t|
