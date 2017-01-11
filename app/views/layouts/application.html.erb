@@ -18,38 +18,42 @@
         
         <div class="navbar-header">
           
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+          <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">-->
+          <!--  <span class="sr-only">Toggle navigation</span>-->
+          <!--  <span class="icon-bar"></span>-->
+          <!--  <span class="icon-bar"></span>-->
+          <!--  <span class="icon-bar"></span>-->
+          <!--</button>-->
           <%= link_to root_path, class: "navbar-brand" do %>
             Jig
-            <div class="navbar-music">
-              <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Akeltontunes%3Aplaylist%3A0k5kve5va7xJCMJTxofUgJ" width="80" height="80" frameborder="0" allowtransparency="true"></iframe>
-            </div>
+            <!--<div class="navbar-music">-->
+            <!--  <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Akeltontunes%3Aplaylist%3A0k5kve5va7xJCMJTxofUgJ" width="80" height="80" frameborder="0" allowtransparency="true"></iframe>-->
+            <!--</div>-->
           <% end %>
+                    
+
+         
         </div>
-        <div class="collapse navbar-collapse" id="main-nav-collapse">
-          <div class="nav navbar-nav navbar-right">
-            <% if user_signed_in? %>
-              <%= link_to "✖", destroy_user_session_path, method: :delete, class: "btn btn-default navbar-btn" %>
-            <% else %>
-              <%= link_to "✔", new_user_session_path, class: "btn navbar-btn" %>
-            <% end %>
-            
-          </div>
-          <ul class="nav navbar-nav navbar-right" style="font-size:200%;">
-            <% if user_signed_in? %>
-            <!--<li><%= link_to "community", users_path %></li>-->
-            <!--<li><%= link_to "my acct", edit_user_registration_path %></li>-->
-            <li><%= link_to "💌", new_contact_path %></li>
-            <li><%= link_to "❔", about_path %></li>
-            <% end %>
-          </ul>
-          
-        </div><!-- /.navbar-collapse -->
+
+<div class="nav navbar-nav navbar-right">
+  <% if user_signed_in? %>
+    <%= link_to "✖", destroy_user_session_path, method: :delete, class: "btn navbar-btn" %>
+  <% else %>
+    <%= link_to "🎂", new_user_session_path, class: "btn navbar-btn" %>
+  <% end %>
+</div>
+
+  
+<ul class="nav navbar-nav navbar-right" style="font-size:200%;">
+  <% if user_signed_in? %>
+  <!--<li><%= link_to "community", users_path %></li>-->
+  <!--<li><%= link_to "my acct", edit_user_registration_path %></li>-->
+  <li><%= link_to "💌", new_contact_path %></li>
+  <li><%= link_to "❔", about_path %></li>
+  <% end %>
+</ul>
+
+        
       </div>
     </nav>
     
