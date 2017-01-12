@@ -1,11 +1,11 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <ul class="list-unstyled">
+<div class="container", style="max-width: 100%">
+  <div class="row", style="max-width: 100%">
+    <div class="col-md-8 col-md-offset-2", style="max-width: 100%">
+      <ul class="list-unstyled", style="max-width: 100%">
         <% @users.each do |user| %>
           <% if user.profile %> 
           <li>
-            <div class="well row <%= cycle('white-bg', '') %>">
+            <div class="well row <%= cycle('white-bg', '') %> ">
               <div class="col-sm-4 text-center">
                 <% if user.profile.avatar %>
                   <%= link_to user do %>
@@ -15,14 +15,17 @@
               </div>
               <div>
                 <%= link_to user do %>
-                  <h2><%= user.profile.first_name %><%= user.profile.last_name %></h2>
+                  <h2 style="font-size: 240%;"><%= user.profile.first_name %><%= user.profile.last_name %></h2>
                 <% end %> 
-                  <p>
-                    <%= user.profile.job_title %>
-                    <% if user.plan_id == 2 %>
-                      <span class="label label-success">PRO</span>
-                    <% end %>
-                  </p>
+                  <div class='btn-jig'>
+                    <%= user.profile.description %>
+                  </div>
+                  <!--<p>-->
+                  <!--  <%= user.profile.job_title %>-->
+                  <!--  <% if user.plan_id == 2 %>-->
+                  <!--    <span class="label label-success">PRO</span>-->
+                  <!--  <% end %>-->
+                  <!--</p>-->
               </div>
             </div>
           </li>

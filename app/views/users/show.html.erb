@@ -1,21 +1,26 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-3 text-center">
-      <%= image_tag @user.profile.avatar.url, class: 'avatar-show-img'  %>
-    </div>
-    <div class="col-md-6">
-      <h1><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
-      <!--<h3><span class="job_title_icon"><%= job_title_icon %></span><%= @user.profile.job_title %></h3>-->
-      <div class="btn btn-jig">
-        <%= @user.profile.description %>
-      </div>
-      <% if current_user.plan_id == 2 %>
-        <div class="well profile-block profile-contact-info">
-          <%= @user.profile.phone_number %>
-          <%= @user.profile.contact_email %>
+<div class="container", style="max-width: 100%; margin-top:-19px">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <%= image_tag @user.profile.avatar.url, class: 'avatar-show-img'  %>
+        <h1 style="max-width: 100%; margin-top:-1px"><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
+        <div class="btn-jig", style="max-width: 100%; margin-top: -10px">
+          <%= @user.profile.description %>
         </div>
-      <% end %>
+      
+      
+      </div>
+      <!--<div class="col-md-3 text-center", style="display: block; max-width: 100%; nowrap">-->
+        <!--<h1 style="max-width: 100%"><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>-->
+        <!--<h3><span class="job_title_icon"><%= job_title_icon %></span><%= @user.profile.job_title %></h3>-->
+        
+        <!--<% if current_user.plan_id == 2 %>-->
+        <!--  <div class="well profile-block profile-contact-info">-->
+        <!--    <%= @user.profile.phone_number %>-->
+        <!--    <%= @user.profile.contact_email %>-->
+        <!--  </div>-->
+        <!--<% end %>-->
+      <!--</div>-->
     </div>
-  </div>
+  
 </div>
 

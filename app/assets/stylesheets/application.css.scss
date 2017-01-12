@@ -114,7 +114,7 @@ h1, h2, h3, body {
   background-color: white;
   border-color: white;
   border-radius: 50%;
-  font-size: 367%;
+  font-size: 567%;
   width: 900px;
   height: 900px;
   text-align: center;
@@ -134,7 +134,7 @@ h1, h2, h3, body {
   // position
   border-radius: 50%;
   border-width: 3px;
-  width: 727px;
+  width: 333.3px;
   height: 250px;
   font-size: 904%;
 	border-color: #C66091;
@@ -162,9 +162,12 @@ h1, h2, h3, body {
   }
 }
 
-.btn-bigboy, .btn-unstyled {
+.btn-bigboyz, .btn-unstyled {
   width: 800px;
   height: 800px;
+  border-radius: 50%;
+  font-size: 904%;
+  margin-top: -100px;
   background-color: white;
   &:hover, &:focus, &:active, &:target {
     color: #5cb85c !important;
@@ -419,4 +422,73 @@ h1, h2, h3, body {
   float: right!important;
   margin-right: 0px !important;
   // float: top!important;
+}
+
+// .field, .form-group {
+//   background-color: white;
+//   border-color: pink;
+// }
+
+// .well, {
+//   background-color: #C66091;
+//   border-color: #C66091;
+// }
+
+.btn.btn-blockz.btn-center {
+  height: 200px;
+  width: 266px;
+  font-size: 650%;
+  // position:center;
+  display: block;
+  margin: 0 auto;
+  text-align: middle;
+	vertical-align: middle;
+	max-width: 100%;
+	border-color: #ff00cc;
+	border-width: 2px;
+}
+
+.btn.btn-blockz {
+  width:100px;
+  height:100px;
+  font-size: 400%;
+  margin-top: -40px;
+  // margin: 0 auto;
+//   text-align: center;
+// 	vertical-align: center;
+//   display: block;
+//   padding:0;
+  vertical-align: center;
+  text-align: middle;
+  padding: 0;
+}
+
+// .btn.btn-jig {
+//   border-color: white;
+//   font-size: 10%;
+//   // max-width: 100%;
+// }
+
+.btn-jig {
+  background-color: transparent;
+  font-size: 430%!important;
+  vertical-align: center;
+  // text-align: center;
+  padding: 0;
+  // position: float;
+  margin: 0 auto;
+  // display: block;
+  width: 750px;
+  height: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis ;
+  max-width: 500px;
+  border-radius: 0%;
+  
+}
+
+.user-index-avatar {
+  width: 200px;
+  height: 200px;
 }

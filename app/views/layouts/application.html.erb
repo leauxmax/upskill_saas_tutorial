@@ -37,7 +37,7 @@
 
 <div class="nav navbar-nav navbar-right">
   <% if user_signed_in? %>
-    <%= link_to "✖", destroy_user_session_path, method: :delete, class: "btn navbar-btn" %>
+    <%= link_to "✌️", destroy_user_session_path, method: :delete, class: "btn navbar-btn" %>
   <% else %>
     <%= link_to "🎂", new_user_session_path, class: "btn navbar-btn" %>
   <% end %>
@@ -48,8 +48,7 @@
   <% if user_signed_in? %>
   <!--<li><%= link_to "community", users_path %></li>-->
   <!--<li><%= link_to "my acct", edit_user_registration_path %></li>-->
-  <li><%= link_to "💌", new_contact_path %></li>
-  <li><%= link_to "❔", about_path %></li>
+  <li><%= link_to "❔", new_contact_path %></li>
   <% end %>
 </ul>
 

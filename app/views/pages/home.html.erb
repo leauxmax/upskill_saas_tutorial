@@ -1,22 +1,28 @@
 <div class="home-callout container">
   <div class="text-center ">
     <!--<h1 style="font-size:904%;">🦎🦋🐉</h1>-->
-    <%= link_to "💬🕯💬", "#" ,class: 'btn-bigboy btn-unstyled' %>
+    <%= link_to "💬✨💬", "#" ,class: 'btn-bigboy btn-unstyled' %>
   </div>
 </div>
 <div class="container", style="color: #ff00cc">
   <div class="row text-center">
     <% if user_signed_in? %>
           <% if current_user.profile %>
-            <%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-large btn-block' %>
-            <%= link_to "Peep your profile", user_path(id: current_user.id), class: 'btn btn-default btn-large btn-block' %>
+            <div class="pull-left", style="margin-left: 13px">
+              <%= link_to "✨", edit_user_profile_path(user_id: current_user.id), class: 'btn btn-blockz' %>
+            </div>
+            <!--<%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-large btn-block' %>-->
+            <div class="pull-right", style="margin-right: 13px">
+              <%= link_to "🎂", users_path, class: 'btn btn-blockz' %>
+            </div> 
+            <!--<%= link_to "Peep your profile", user_path(id: current_user.id), class: 'btn btn-default btn-large btn-block' %>-->
           <% else %>
-            <!--<div class="pull-left">-->
-              <%= link_to "🐣", new_user_profile_path(user_id: current_user.id), class: 'btn btn-primary btn-block  ' %>
-            <!--</div>-->
-      <div class="col-md-6 col-md-offset-4">
-            <div class="pull-right">
-              <%= link_to "🍀", users_path, class: 'btn btn-primary col-sm-offset-2 btn-block ' %>
+            <div class="pull-left", style="margin-left: 13px">
+              <%= link_to "🍰", new_user_profile_path(user_id: current_user.id), class: 'btn btn-blockz' %>
+            </div>
+      <!--<div class="col-md-6 col-md-offset-4">-->
+            <div class="pull-right", style="margin-right: 13px">
+              <%= link_to "🎂", users_path, class: 'btn btn-blockz' %>
             </div>  
       </div>
            
@@ -25,12 +31,12 @@
       </div>
     
      
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <!--<div class="well">-->
+      <!--<div class="col-md-6 col-md-offset-3 text-center">-->
+      <!--  <div class="pull-down", style="margin-bottom: 13px">-->
           <!--<h2 class="text-center">🎂</h2>-->
-          <%= link_to "🎂", users_path, class: 'btn btn-primary ' %>
-        </div>
-      </div>
+      <!--    <%= link_to "🎂", users_path, class: 'btn btn-blockz ' %>-->
+      <!--  </div>-->
+      <!--</div>-->
       <!--<div class="col-md-6 col-md-offset-3 text-center">-->
         <!--<div class="well">-->
           <!--<h2 class="text-center">🎂</h2>-->
@@ -50,7 +56,7 @@
     <!--<div class="col-md-6">-->
     <!--  <div class="well">-->
     <!--    <h3 class="text-center", style="margin-top: -8px">Treat. Yo. Self! $9/mo💸</h3>-->
-        <%= link_to "🕴🕴", new_user_registration_path(plan: @pro_plan.id), class: 'btn-bigboy btn-unstyle' %>
+        <%= link_to "🕴🕴", new_user_registration_path(plan: @pro_plan.id), class: 'btn-bigboyz btn-unstyled' %>
     <!--  </div>-->
     <!--</div>-->
       </div>
