@@ -1,10 +1,20 @@
+<div class="main-container">
+  <div class="fixer-container">
+    <ul class="list-of-floating-elements">
+      <ul class="floated"><%= link_to "🌱", new_user_registration_path(plan: @basic_plan.id) ,class: 'btn-bigboyz fixer-container' %></ul>
 
-<div class="row col-xs-12  ">
-  <!--<div class="text-center blockz">-->
-    <!--<h1 style="font-size:904%;">🦎🦋🐉</h1>-->
-<%= link_to "🍭∞🎧", "#" ,class: 'btn-bigboyz', style: "position: relative" %>
+    </ul>
   </div>
 </div>
+
+
+
+<!--<div class="row col-xs-12  ">-->
+  <!--<div class="row">-->
+    <!--<h1 style="font-size:904%;">🦎🦋🐉</h1>-->
+<!--    <%= link_to "🌱", "#" ,class: 'btn-bigboyz fixer-container' %>-->
+<!--  </div>-->
+<!--</div>-->
 <div class="container", style="color: #ff00cc">
   <!--<div class="row text-center">-->
     <% if user_signed_in? %>
@@ -46,18 +56,35 @@
       <!--</div>-->
       
     <% else %>
-    <!--<div class="row text-center">  -->
+    <div class="pull-right", style="margin-right: 13px">
     <!--  <div class="center-block", style="margin-top: -106px">-->
-    <!--      <%= link_to "🦍🦑", new_user_registration_path(plan: @basic_plan.id), class: 'btn-bigboyz btn-unstyled' %> -->
+          <!--<%= link_to "🦍🦑", new_user_registration_path(plan: @basic_plan.id), class: 'btn-bigboyz btn-unstyled' %> -->
     <!--  <div class="container center-block", style="margin-top: -24px">  -->
-    <!--    <%= link_to "🕴🕴", new_user_registration_path(plan: @pro_plan.id), class: 'btn-bigboyz btn-unstyled' %>-->
+        <!--<%= link_to "🕴🕴", new_user_registration_path(plan: @pro_plan.id), class: 'btn-unstyled' %>-->
     <!--  </div>-->
     <!--</div>-->
     <!--  </div>-->
     <!--  </div>-->
-    <!--  </div>-->
+    </div>
     <% end %>
   </div>
   
 </div> 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br>
+<br><br>
+<br><br>
+<br><br>
+<div class="pull-bottom pull-right" >
+  <p>🛠 by yaboy</p>
+</div
+
 

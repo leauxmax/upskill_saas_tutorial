@@ -24,13 +24,13 @@ $grid-float-breakpoint: 0px;
 // Typography styles
 h1, h2, h3, body {
    font-family: 'Open Sans', sans-serif;  
-   color: #00b08b
+   color: #88B04B
 }
 
 // Background gradient
 .navbar {
   
-  background-color: white !important;
+  background-color: #F7786B;//#91A8D0 !important;
   
   
   
@@ -45,25 +45,29 @@ h1, h2, h3, body {
   // background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
   // background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-.body {
-  background-color: linear-gradient(to left, #ffffff, #228b22) !important;
+.head {
+  background-color: #91A8D0 !important;
+}
+body {
+  background-color: #91A8D0 !important;
 }
 // btn primary
 // #ff00cc
 
 .btn.navbar-btn {
-  border-color: #C66091;
+  border-color: #88B04B;
+  border-width: 3px;
   border-radius: 50%;
+  background-color: #91A8D0;
   width: 35px;
 	height: 35px;
-	border-color: #C66091;
+// 	border-color: #C66091;
 	font-size: 150%;
 	vertical-align: center;
   text-align: middle;
   padding: 0;
 	&:hover, &:focus, &:active, &:target {
-    color: #5cb85c !important;
+    color: #88B04B !important;
 	}
 }
 
@@ -163,33 +167,59 @@ h1, h2, h3, body {
   }
 }
 
-.btn-bigboyz, .btn-unstyled {
-  // width: 800px;
-  // height: 800px;
+.btn-bigboyz {
+  float: left;
+      position: relative;
+      left: 50%;
+      right: 50%;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  border-color: #00b08b;
-  // position:absolute;
-  position: absolute;
+  // border-color: #ffd700;
+  // // position:absolute;
+  // // position: absolute;
+  // float: left;
+  // position: relative;
+  // left: 50%;
   max-width: 100%;
-  max-height: 100%;
-  // top: 0;
-  // right: 0;
-  // transition: .5s ease;
-  top: 50%;
-  left: 50%;
-  // display: fixed;
-  margin: 0 auto; 
+  // max-height: 100%;
+  // display: block;
+  // // top: 50%;
+  // // right: 50%;
+  // // transition: .5s ease;
+  // // top: 50%;
+  // // left: 50%;
+  // // display: fixed;
+  // margin: 50% auto; 
   font-size: 904%;
   // text-align: center;
   // vertical-align: center;
   // width: 100%;
   // margin-top: -100px;
-  background-color: #00b08b ;
+  background-color: #ffd700 ;//#00b08b ;
   &:hover, &:focus, &:active, &:target {
-    color: #5cb85c !important;
+    color: #ffd700 !important;
     text-decoration: none
   }
 }
+
+// .fixer-container {
+//       float: left;
+//       position: relative;
+//       left: -50%;
+// }
+
+  .main-container {
+      float: left;
+      position: relative;
+      left: 50%;
+      margin-top: 50px;
+    }
+    .fixer-container {
+      float: left;
+      position: relative;
+      left: -50%;
+    }
 
 
 //btn-tongue
@@ -274,10 +304,11 @@ h1, h2, h3, body {
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   // display: none;
-  color: #00b08b;
+  color: #88B04B;//#00b08b;
+  font-size: 240%;
   &:hover &:active &:focus &:target {
-    color: #00b08b!important;
-    opacity: 0.75;
+    color: #88B04B!important;
+    // opacity: 0.75;
   }
 }
 
@@ -298,7 +329,7 @@ h1, h2, h3, body {
   display: block;
   padding: 10px 15px;
   &:hover, &:focus, &:active {
-    color: #00b08b !important;  /*#00c6ff;*/
+    color: #88B04B !important;  /*#00c6ff;*/
 }
 }
 
@@ -380,10 +411,7 @@ h1, h2, h3, body {
 
 //COOL bTNs
 
-// .btn .btn-default .navbar-btn {
-//   border-radius: 50%;
-//   border-color: black;
-// }
+
 
 // .btn-bigboy.btn-unstyle {
 //   font-size: 904%;
@@ -431,7 +459,7 @@ h1, h2, h3, body {
   text-align: middle;
 	vertical-align: middle;
 	max-width: 100%;
-	border-color: #ff00cc;
+	border-color: #00b08b;
 	border-width: 2px;
 }
 
