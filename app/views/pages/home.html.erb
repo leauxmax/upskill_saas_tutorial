@@ -1,11 +1,12 @@
-<div class="home-callout container">
-  <div class="text-center ">
+
+<div class="row col-xs-12  ">
+  <!--<div class="text-center blockz">-->
     <!--<h1 style="font-size:904%;">🦎🦋🐉</h1>-->
-    <%= link_to "💬✨💬", "#" ,class: 'btn-bigboy btn-unstyled' %>
+<%= link_to "🍭∞🎧", "#" ,class: 'btn-bigboyz', style: "position: relative" %>
   </div>
 </div>
 <div class="container", style="color: #ff00cc">
-  <div class="row text-center">
+  <!--<div class="row text-center">-->
     <% if user_signed_in? %>
           <% if current_user.profile %>
             <div class="pull-left", style="margin-left: 13px">
@@ -45,23 +46,16 @@
       <!--</div>-->
       
     <% else %>
-    <div class="home-callout container"> 
-      <div class="center-block", style="margin-top: -196px">
-      <!--<div class="text-center container"> -->
-      <!--<div class="well">-->
-    <!--    <h3 class="text-center", style="margin-top: -8px">Basic, for nuthin!🍕</h3>-->
-          <%= link_to "🦍🦑", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-block center-block' %> 
-      
-    <!--</div>-->
-    <!--<div class="col-md-6">-->
-    <!--  <div class="well">-->
-    <!--    <h3 class="text-center", style="margin-top: -8px">Treat. Yo. Self! $9/mo💸</h3>-->
-        <%= link_to "🕴🕴", new_user_registration_path(plan: @pro_plan.id), class: 'btn-bigboyz btn-unstyled' %>
+    <!--<div class="row text-center">  -->
+    <!--  <div class="center-block", style="margin-top: -106px">-->
+    <!--      <%= link_to "🦍🦑", new_user_registration_path(plan: @basic_plan.id), class: 'btn-bigboyz btn-unstyled' %> -->
+    <!--  <div class="container center-block", style="margin-top: -24px">  -->
+    <!--    <%= link_to "🕴🕴", new_user_registration_path(plan: @pro_plan.id), class: 'btn-bigboyz btn-unstyled' %>-->
     <!--  </div>-->
     <!--</div>-->
-      </div>
-      </div>
-      </div>
+    <!--  </div>-->
+    <!--  </div>-->
+    <!--  </div>-->
     <% end %>
   </div>
   

@@ -24,7 +24,7 @@ $grid-float-breakpoint: 0px;
 // Typography styles
 h1, h2, h3, body {
    font-family: 'Open Sans', sans-serif;  
-   color: #ff00cc
+   color: #00b08b
 }
 
 // Background gradient
@@ -113,8 +113,9 @@ h1, h2, h3, body {
   // z-index: 9000 !important;
   background-color: white;
   border-color: white;
+  // font-color: -0x17EA
   border-radius: 50%;
-  font-size: 567%;
+  font-size: 904%;
   width: 900px;
   height: 900px;
   text-align: center;
@@ -124,7 +125,7 @@ h1, h2, h3, body {
     // white-space: nowrap;
   // z-index: .9000;
   z-index: -9000;
-  max-width: 40%;
+  max-width: 100%;
   
 }
 
@@ -163,12 +164,27 @@ h1, h2, h3, body {
 }
 
 .btn-bigboyz, .btn-unstyled {
-  width: 800px;
-  height: 800px;
+  // width: 800px;
+  // height: 800px;
   border-radius: 50%;
+  border-color: #00b08b;
+  // position:absolute;
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  // top: 0;
+  // right: 0;
+  // transition: .5s ease;
+  top: 50%;
+  left: 50%;
+  // display: fixed;
+  margin: 0 auto; 
   font-size: 904%;
-  margin-top: -100px;
-  background-color: white;
+  // text-align: center;
+  // vertical-align: center;
+  // width: 100%;
+  // margin-top: -100px;
+  background-color: #00b08b ;
   &:hover, &:focus, &:active, &:target {
     color: #5cb85c !important;
     text-decoration: none
@@ -252,16 +268,16 @@ h1, h2, h3, body {
 }
 
 .navbar-btn {
-  color: #ff00cc;
+  color: #00b08b;
 }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   // display: none;
-  color: #ff00cc;
+  color: #00b08b;
   &:hover &:active &:focus &:target {
-    color: #ff00cc!important;
-    // opacity: 0.75;
+    color: #00b08b!important;
+    opacity: 0.75;
   }
 }
 
@@ -282,39 +298,10 @@ h1, h2, h3, body {
   display: block;
   padding: 10px 15px;
   &:hover, &:focus, &:active {
-    color: #ff00cc !important;  /*#00c6ff;*/
+    color: #00b08b !important;  /*#00c6ff;*/
 }
 }
 
-// .navbar-default .navbar-toggle .icon-bar {
-//   background-color: #ff00cc;
-//   display: none;
-// }
-
-// .navbar-default .navbar-toggle {
-//   display: none;
-//   border: 2px solid #ff00cc;
-//   &:hover, &:focus {
-//     background-color: white;  
-//   }
-// }
-
-// .navbar-btn {
-//   color: #ff00cc;
-//   //margin-top: 8px;
-//   //margin-bottom: 8px;
-// }
-
-// .navbar-right {
-//   display: always;
-//   // position: absolute;
-  
-// }
-
-// nav.navbar-nav.navbar-right {
-//   white-space: nowrap;
-//   display: none;
-// }
 
 
 // SPOTIFY plyr
@@ -393,15 +380,15 @@ h1, h2, h3, body {
 
 //COOL bTNs
 
-.btn .btn-default .navbar-btn {
-  border-radius: 50%;
-  border-color: black;
-}
+// .btn .btn-default .navbar-btn {
+//   border-radius: 50%;
+//   border-color: black;
+// }
 
-.btn-bigboy.btn-unstyle {
-  font-size: 904%;
-  margin-top: -150px;
-}
+// .btn-bigboy.btn-unstyle {
+//   font-size: 904%;
+//   margin-top: -150px;
+// }
 
 .navbar-collapse.collapse, .btn.navbar-btn {
   display: block!important;
