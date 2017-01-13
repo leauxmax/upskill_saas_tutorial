@@ -8,18 +8,20 @@
             <div class="well row <%= cycle('white-bg', '') %> ">
               <div class="col-sm-4 text-center">
                 <% if user.profile.avatar %>
+                  <div class="disco">
+                  </div>
                   <%= link_to user do %>
                     <%= image_tag user.profile.avatar.url, class: 'user-index-avatar' %>
                   <% end %>
                 <% end %>
+                
               </div>
               <div>
                 <%= link_to user do %>
-                  <h2 style="font-size: 240%;"><%= user.profile.first_name %><%= user.profile.last_name %></h2>
+                  <h2 style="font-size: 240%; color: #88B04B!important"><%= user.profile.first_name %><%= user.profile.last_name %></h2>
+                    
                 <% end %> 
-                  <div class='btn-jig'>
-                    <%= user.profile.description %>
-                  </div>
+                  
                   <!--<p>-->
                   <!--  <%= user.profile.job_title %>-->
                   <!--  <% if user.plan_id == 2 %>-->

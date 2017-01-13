@@ -21,16 +21,22 @@ $grid-float-breakpoint: 0px;
 @import 'font-awesome'; 
 
 
+//#88B04B greenery 
+// #F7786B peach echo
+//#91A8D0 serenity
+
+
+
 // Typography styles
 h1, h2, h3, body {
    font-family: 'Open Sans', sans-serif;  
-   color: #88B04B
+   color: white;
 }
 
 // Background gradient
 .navbar {
   
-  background-color: #F7786B;//#91A8D0 !important;
+  background-color: #88B04B//#91A8D0 !important;
   
   
   
@@ -46,19 +52,19 @@ h1, h2, h3, body {
   // background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .head {
-  background-color: #91A8D0 !important;
+  background-color: #88B04B !important;
 }
 body {
-  background-color: #91A8D0 !important;
+  background-color: #88B04B !important;
 }
 // btn primary
 // #ff00cc
 
 .btn.navbar-btn {
-  border-color: #88B04B;
+  border-color: white;
   border-width: 3px;
   border-radius: 50%;
-  background-color: #91A8D0;
+  background-color: white;//#91A8D0;
   width: 35px;
 	height: 35px;
 // 	border-color: #C66091;
@@ -175,6 +181,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  color: white;
   // border-color: #ffd700;
   // // position:absolute;
   // // position: absolute;
@@ -196,9 +203,9 @@ body {
   // vertical-align: center;
   // width: 100%;
   // margin-top: -100px;
-  background-color: #ffd700 ;//#00b08b ;
+  background-color: #88B04B;//#ffd700 ;//#00b08b ;
   &:hover, &:focus, &:active, &:target {
-    color: #ffd700 !important;
+    color: white!important;
     text-decoration: none
   }
 }
@@ -304,10 +311,10 @@ body {
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   // display: none;
-  color: #88B04B;//#00b08b;
+  color: white;//#00b08b;
   font-size: 240%;
   &:hover &:active &:focus &:target {
-    color: #88B04B!important;
+    color: white!important;
     // opacity: 0.75;
   }
 }
@@ -484,26 +491,228 @@ body {
 //   // max-width: 100%;
 // }
 
+// .btn-jig {
+  // background-color: transparent;
+  // // font-size: 430%!important;
+  // vertical-align: center;
+  // // text-align: center;
+  // padding: 0;
+  // // position: float;
+  // margin: 0 auto;
+  // // display: block;
+  // width: 750px;
+  // height: 100px;
+  // white-space: nowrap;
+  // // overflow: hidden;
+  // // text-overflow: ellipsis ;
+  // max-width: 500px;
+  // border-radius: 0%;
+  
+// }
+
 .btn-jig {
-  background-color: transparent;
-  font-size: 430%!important;
-  vertical-align: center;
-  // text-align: center;
-  padding: 0;
+  background-color: #88B04B;
+  font-size: 200% !important;
+  text-align: middle;
+  // vertical-align: center;
   // position: float;
   margin: 0 auto;
+  display: block;
   // display: block;
-  width: 750px;
-  height: 100px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis ;
-  max-width: 500px;
-  border-radius: 0%;
-  
+  //   padding-top: 28px;
+  //   text-align: center;
+  //   line-height: 28px;
+  padding: 3px 10px;
 }
 
 .user-index-avatar {
   width: 200px;
   height: 200px;
+}
+
+
+//// settings
+$font-size:20px; // base size
+$size:20em;
+$background-color:#eaeaee;
+$rpm:33.5;
+$center-size:40%;
+
+//colors
+$highlight-color:#eef;
+$print-white:#dde;
+$print-1:rgb(77,67,145);
+$print-2:rgb(207,75,145);
+
+
+//// here be dragons
+// animation duration
+$t:60s/$rpm;
+
+// create grooves
+$grooves:();
+$grooves-loop-size:70px;
+$grooves-steps:59;
+@if($grooves-steps % 2 == 0){
+  $grooves-steps:$grooves-steps+1;
+}
+$grooves-step-size:$grooves-loop-size/$grooves-steps;
+$grooves-color:black;
+$grooves-variation:0.3;
+$grooves-max-transparency:0.5;
+
+@for $i from 1 through $grooves-steps{
+  $step:$grooves-step-size*$i;
+  $transparency:1;
+  $cur-variation:random()*$grooves-variation;
+  $transparency:$transparency - $cur-variation;
+  @if($i % 2==1){
+    $transparency:1-$transparency;
+  }
+  $transparency:1-((1-$transparency)*$grooves-max-transparency);
+
+  $grooves:append($grooves,(transparentize($grooves-color,$transparency) $step),comma);
+};
+
+// create tracks
+$tracks:();
+$tracks-num:7;
+$tracks-avail-size:65%;
+$tracks-start:30%;
+$track-size:$tracks-avail-size/$tracks-num;
+$track-variation:3%;
+$track-ridge-size:1%;
+$track-ridge-color:rgba(0,0,0,0.3);
+$track-ridge-blur:0.2%;
+@for $i from 1 through $tracks-num{
+  $cur-pos:$tracks-start+($i*$track-size);
+  $cur-pos:$cur-pos+(random()*$track-variation);
+  $tracks:append($tracks,(transparentize($track-ridge-color,1) $cur-pos - $track-ridge-blur),comma);
+  $tracks:append($tracks,($track-ridge-color $cur-pos),comma);
+  $cur-pos:$cur-pos+$track-ridge-size;
+  $tracks:append($tracks,($track-ridge-color $cur-pos),comma);
+  $tracks:append($tracks,(transparentize($track-ridge-color,1) $cur-pos+$track-ridge-blur),comma);
+}
+
+// animations
+@keyframes wiggle{
+  0%{
+    transform:rotate(0);
+  }
+  100%{
+    transform:rotate(0.5deg);
+  }
+}
+@keyframes zoom{
+  0%{
+    opacity:0.5;
+    transform:scale(1.4);
+  }
+  50%{
+    opacity:0.8;
+    transform:scale(1.2) rotate(180deg);
+  }
+  100%{
+    opacity:0.5;
+    transform:scale(1) rotate(360deg);
+  }
+}
+@keyframes spin{
+  0%{
+    transform:rotate(0);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+
+body{
+  background:$background-color;
+  font-size:$font-size;
+}
+.disco{
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-$size/2;
+  margin-top:-$size/2;
+  width:$size;
+  height:$size;
+  
+  background: 
+    // dark areas on both ends
+    radial-gradient(circle closest-side, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 35.5%, rgba(0,0,0,0) 96%, rgba(0,0,0,1) 96.5%),
+    // tracks
+    radial-gradient(circle closest-side, $tracks),
+    // highlight
+    conic-gradient(black 40deg, $highlight-color 42deg,black 44deg, black 219deg, $highlight-color 222deg, $highlight-color 223deg,black 228deg),
+    // grooves
+    repeating-radial-gradient($grooves),
+    // weak lighting
+    conic-gradient(
+      transparentize(white,1) 80deg,
+      transparentize(white,0.96) 90deg,
+      transparentize(white,1) 95deg,
+      transparentize(white,1) 260deg,
+      transparentize(white,0.96) 270deg,
+      transparentize(white,1) 285deg
+    ),
+    // strong lighting
+    conic-gradient(
+      transparentize(white,1),
+      transparentize(white,0.78) 20deg,
+      transparentize(white,0.71) 40deg,
+      transparentize(white,1) 70deg,
+      transparentize(white,1) 180deg,
+      transparentize(white,0.82) 200deg,
+      transparentize(white,0.85) 210deg,
+      transparentize(white,1) 250deg
+    ), 
+    black;
+  background-blend-mode:normal,normal,color-dodge,normal,normal;
+  animation:wiggle 30ms linear infinite alternate;
+  border-radius:100%;
+  overflow:hidden;
+  
+  // zoom anim thing
+  &::before{
+    content:"  ";
+    position:absolute;
+    width:50%;
+    height:50%;
+    left:50%;
+    top:50%;
+    width:$center-size;
+    height:$center-size;
+    margin-left:-$center-size/2;
+    margin-top:-$center-size/2;
+    background:repeating-radial-gradient($grooves);
+    border-radius:100%;
+    animation:zoom $t linear infinite;
+    
+  }
+
+  // inner label thing
+  &::after{
+    font-size: 200%;
+    content: "🤘";
+    display:block;
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:$center-size;
+    height:$center-size;
+    margin-left:-$center-size/2;
+    margin-top:-$center-size/2;
+    border-radius:100%;
+    color:$print-white;
+    text-align:center;
+    line-height:3em;
+    font-weight:bold;
+    background:radial-gradient(circle closest-side, $background-color 8%, transparentize($background-color,1) 9%, transparent 85%, $print-white 85%, $print-white 90%, transparent 90%),
+      conic-gradient($print-1 25%, $print-2 0 50%, $print-1 0 75%, $print-2 0);
+    background-size:100%, 3em 3em;
+    animation:spin $t linear infinite;
+  }
 }

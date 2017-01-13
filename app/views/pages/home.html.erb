@@ -1,22 +1,11 @@
 <div class="main-container">
-  <div class="fixer-container">
-    <ul class="list-of-floating-elements">
-      <ul class="floated"><%= link_to "🌱", new_user_registration_path(plan: @basic_plan.id) ,class: 'btn-bigboyz fixer-container' %></ul>
-
-    </ul>
-  </div>
-</div>
-
-
-
-<!--<div class="row col-xs-12  ">-->
-  <!--<div class="row">-->
-    <!--<h1 style="font-size:904%;">🦎🦋🐉</h1>-->
-<!--    <%= link_to "🌱", "#" ,class: 'btn-bigboyz fixer-container' %>-->
-<!--  </div>-->
-<!--</div>-->
-<div class="container", style="color: #ff00cc">
-  <!--<div class="row text-center">-->
+              <div class="fixer-container">
+                <ul class="list-of-floating-elements">
+                  <ul class="floated"><%= link_to "samjam", users_path,  class: 'btn-bigboyz fixer-container' %></ul>
+            <!--<%= link_to "🎂", users_path, class: 'btn btn-blockz' %>-->
+                </ul>
+              </div>
+            </div>  
     <% if user_signed_in? %>
           <% if current_user.profile %>
             <div class="pull-left", style="margin-left: 13px">
@@ -28,6 +17,15 @@
             </div> 
             <!--<%= link_to "Peep your profile", user_path(id: current_user.id), class: 'btn btn-default btn-large btn-block' %>-->
           <% else %>
+            <div class="main-container">
+              <div class="fixer-container">
+                <ul class="list-of-floating-elements">
+                  <ul class="floated"><%= link_to "🌱", edit_user_profile_path(user_id: current_user.id),  class: 'btn-bigboyz fixer-container' %></ul>
+            <!--<%= link_to "🎂", users_path, class: 'btn btn-blockz' %>-->
+                </ul>
+              </div>
+            </div>  
+            
             <div class="pull-left", style="margin-left: 13px">
               <%= link_to "🍰", new_user_profile_path(user_id: current_user.id), class: 'btn btn-blockz' %>
             </div>
