@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Grinfinity Draft</title>
+    <title>6r33n Draft</title>
     <%= csrf_meta_tags %>
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -25,7 +25,7 @@
           <!--  <span class="icon-bar"></span>-->
           <!--</button>-->
           <%= link_to root_path, class: "navbar-brand" do %>
-            samjam
+            6r33n
             <!--<div class="navbar-music">-->
             <!--  <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Akeltontunes%3Aplaylist%3A0k5kve5va7xJCMJTxofUgJ" width="80" height="80" frameborder="0" allowtransparency="true"></iframe>-->
             <!--</div>-->
@@ -35,7 +35,7 @@
          
         </div>
 
-<div class="nav navbar-nav navbar-right">
+<div class="navbar-right">
   <% if user_signed_in? %>
     <%= link_to "✌️", destroy_user_session_path, method: :delete, class: "btn navbar-btn" %>
   <% else %>
@@ -48,7 +48,7 @@
   <% if user_signed_in? %>
   <!--<li><%= link_to "community", users_path %></li>-->
   <!--<li><%= link_to "my acct", edit_user_registration_path %></li>-->
-  <li><%= link_to "❔", new_contact_path %></li>
+  <!--<li><%= link_to "❔", new_contact_path %></li>-->
   <% end %>
 </ul>
 
