@@ -49,6 +49,8 @@ gem 'figaro', '1.1.1'
 #use Paperclip for img upload
 gem 'paperclip', '4.3.6'
 
+gem 'bourbon'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
