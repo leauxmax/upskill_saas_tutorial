@@ -20,7 +20,13 @@ $grid-float-breakpoint: 0px;
 @import 'font-awesome-sprockets';
 @import 'font-awesome'; 
 
-
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
+}
 
 
 //#88B04B greenery gr66n
@@ -31,8 +37,9 @@ $grid-float-breakpoint: 0px;
 // #F7786B peach echo
 //#91A8D0 serenity
 
+
 .navbar-brand {
-  background-color: #88B04B;
+  background-color: black;//#88B04B;
   color: white!important;
   -webkit-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
@@ -42,16 +49,18 @@ $grid-float-breakpoint: 0px;
 //   @include perspective(300px);
 // @include perspective-origin(30% 30%);
   // color: #006E51!important;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Freckle Face', cursive;
   font-weight: 800;
-  margin-top: 0px auto;
+  
+  // margin-top: 5px;
+  // margin-right: 10px;
   font-size: 141%;
   border-radius: 50%;
   // padding-top: 15px;
   // padding-bottom: 15px;
   // line-height: 20px;
   position: relative;
-  display: block;
+  display: inline block;
   // padding: 10px 15px;
   &:active &:hover &:focus{
     -webkit-transition: background-color 1000ms linear;
@@ -74,8 +83,10 @@ h1, h2, h3, body {
 
 // Background gradient
 .navbar {
-  
-  background-color: white;//#88B04B//#91A8D0 !important;
+  position: fixed;
+  display: block;
+  margin: 0 auto;
+  background-color: black;//#88B04B//#91A8D0 !important;
   
   
   
@@ -91,10 +102,35 @@ h1, h2, h3, body {
   // background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .head {
-  background-color: white!important;//#88B04B !important;
+  background-color: black!important;//#88B04B !important;
 }
 body {
-  background-color: white!important;//#88B04B !important;
+  background-color: black!important;//#88B04B !important;
+}
+
+.btn.navbar-btn {
+  background-color: black;//#88B04B!important;
+  border-color: black;//#88B04B!important;
+  width: 35px;
+	height: 35px;
+	line-height: 35px;
+// 	transparent: 90%!important;
+// 	border-color: #C66091;
+	font-size:180%;
+// 	opacity: 0.5;
+// 	filter: brightness(300%);
+// 	filter: contrast(200%);
+	filter: grayscale(100%);
+	vertical-align: center;
+  text-align: middle;
+  padding: 0;
+// 	&:hover, &:focus, &:active, &:target {
+//     color: #88B04B !important;
+// 	}
+}
+
+.form-group {
+  filter: grayscale(100%);
 }
 
 .btn-bigboyz {
@@ -125,6 +161,7 @@ body {
   // // left: 50%;
   // // display: fixed;
   margin: 0px auto;
+  // margin-top: 500px;
   padding: 0px;
   // padding: none;
   text-align: center;
@@ -188,25 +225,19 @@ body {
     line-height: 100px;
   vertical-align: center;
 }
+ 
+// .container {
+//   text-align:center;
+//   margin:0 20px;
+//   display: inline block;
+//   // width: 100%;
+  
+// }
 
 // btn primary
 // #ff00cc
 
-.btn.navbar-btn {
-  background-color: #88B04B!important;
-  border-color: #88B04B!important;
-  width: 35px;
-	height: 35px;
-// 	transparency: 100%;
-// 	border-color: #C66091;
-	font-size:86%;
-	vertical-align: center;
-  text-align: middle;
-  padding: 0;
-// 	&:hover, &:focus, &:active, &:target {
-//     color: #88B04B !important;
-// 	}
-}
+
 
 .btn-primary, .btn-primary:hover, .btn-primary:visited {
     // position: static !important;
@@ -382,20 +413,6 @@ body {
   border-radius: 50%;
 }
 
-// .navbar-btn {
-//   // color: #00b08b;
-// }
-
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav > li > a {
-  // display: none;
-  // color: white;//#00b08b;
-  font-size: 86%;
-  // &:hover &:active &:focus &:target {
-  //   color: white!important;
-    // opacity: 0.75;
-  // }
-}
 
 // Nav styles
 .navbar {
@@ -489,26 +506,14 @@ body {
 //   margin-top: -150px;
 // }
 
-.navbar-collapse.collapse, .btn.navbar-btn {
-  display: block!important;
-  display:none;
-  
-}
 
-.navbar-nav>li, .navbar-nav, .btn.navbar-btn, .navbar-brand {
-  float: left !important;
 
-}
 
 // .navbar-nav.navbar-right:last-child {
 //   margin-right: -15px !important;
 // }
 
-.navbar-right, .btn.navbar-btn{
-  float: right!important;
-  margin-right: 0px !important;
-  // float: top!important;
-}
+
 
 // .field, .form-group {
 //   background-color: white;
