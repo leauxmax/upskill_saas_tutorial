@@ -7,4 +7,7 @@ class PagesController < ApplicationController
   
   def about
   end
+  
+  def p1zz4b07
+  end
 end
