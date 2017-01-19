@@ -40,7 +40,7 @@ $grid-float-breakpoint: 0px;
 
 .navbar-brand {
   background-color: black;//#88B04B;
-  color: white!important;
+  color: #88B04B!important;
   -webkit-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
@@ -49,7 +49,7 @@ $grid-float-breakpoint: 0px;
 //   @include perspective(300px);
 // @include perspective-origin(30% 30%);
   // color: #006E51!important;
-  font-family: 'Freckle Face', cursive;
+  font-family: 'Special Elite', cursive;
   font-weight: 800;
   
   // margin-top: 5px;
@@ -74,9 +74,110 @@ $grid-float-breakpoint: 0px;
   // }
 }
 
+.freebirdFormviewerViewHeaderTitle, .freebirdFormviewerViewHeaderDescription, .freebirdFormviewerViewFormCard, .quantumWizTextinputPaperinputInput.exportInput, .quantumWizTextinputPaperinputPlaceholder.exportLabel {
+  font-family: 'Special Elite', cursive;
+  font-weight: 800;
+}
+
+
+//GIPHY CAT
+.freebirdFormviewerViewFormBanner.freebirdHeaderMast {
+  // height: 910px;
+  height:100vh;
+  // width:100vw;
+  max-width: 100%;
+  max-height: 100%;
+  // margin-top: 910px;
+  // filter: sepia(100%);
+  z-index: -1;
+  filter: hue-rotate(36deg);
+  background-attachment:fixed;
+  // position: relative;
+  // display: block;
+  // // onScroll: 
+  // height: 100%; 
+  // overflow: scroll;
+  // height: 100%; overflow: scroll
+  display:inline;
+  
+}
+.freebirdFormviewerViewCenteredContent {
+  background-color: #88B04B; 
+  color: #88B04B;
+  border-radius: 50%;
+  // background-opacity : 0.1;
+  // opacity: 0.1;
+}
+
+.freebirdFormviewerViewHeaderDescription.wacky {
+  font-size: 160%!important;
+  // margin-top: 10px;
+}
+.quantumWizButtonPaperbuttonLabel.exportLabel, .freebirdFormviewerViewNavigationButtons, .quantumWizButtonPaperbuttonEl.quantumWizButtonPaperbuttonFlat.quantumWizButtonPaperbuttonDark.quantumWizButtonPaperbutton2El2.freebirdFormviewerViewNavigationSubmitButton.isUndragged {
+  font-size: x-large;
+  border-color: red;
+  border-width: 2px;
+}
+
+
+.quantumWizButtonPaperbuttonEl.quantumWizButtonPaperbuttonFlat.quantumWizButtonPaperbuttonDark.quantumWizButtonPaperbutton2El2.freebirdFormviewerViewNavigationSubmitButton.isUndragged {
+  background-color: black;
+  color: #88B04B;
+  border-width: 2px;
+  border-color: #88B04B;
+  border-width: 2px;
+}
+
+
+
+.freebirdFormviewerViewFooterDisclaimer.freebirdFormviewerViewFooterNoTextDecoration.freebirdDisclaimerColor {
+  display: none;
+}
+
+.freebirdFormviewerViewFormCard, .freebirdFormviewerViewFormContent {
+  background-color : black!important;
+  // border-radius: 2%;
+  // border: none;
+  // border-shadow: none;
+  // margin-left: 28px;
+  // margin-top: 15px;
+  
+  // text-color: white;
+  color: #88B04B!important;
+}
+.freebirdFormviewerViewItemsItemItemTitle, .quantumWizTextinputPaperinputInput.exportInput, .quantumWizTextinputPaperinputPlaceholder.exportLabel, .quantumWizTextinputPaperinputUnderline.exportUnderline, .quantumWizTextinputPaperinputFocusUnderline.exportFocusUnderline, .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdThemedInput {
+  color: #88B04B!important;
+}
+
+.quantumWizTextinputPaperinputUnderline {
+  background-color: #88B04B;
+  height: 4px;
+}
+.exportUnderline {
+  color: #88B04B!important;
+}
+
+.quantumWizButtonPapericonbuttonEl.quantumWizButtonPapericonbuttonLight  {
+  display: none;
+}
+//alert thing bottom left
+
+.freebirdFormviewerViewAccentBanner.freebirdAccentBackground {
+  display: none;
+}
+
+.quantumWizButtonPaperbuttonFocusOverlay, .exportOverlay {
+  display: none;
+}
+
+.freebirdFormviewerViewNavigationHeaderButton {
+  display: none;
+}
+
+// freebirdHeaderMast
 // Typography styles
 h1, h2, h3, body {
-   font-family: 'Open Sans', sans-serif; 
+   font-family: 'Special Elite', cursive;
    font-size: golden-ratio(14px,  1);
    color: #5A7247;
 }
@@ -105,7 +206,10 @@ h1, h2, h3, body {
   background-color: black!important;//#88B04B !important;
 }
 body {
-  background-color: black!important;//#88B04B !important;
+  background-color: #88B04B!important;//#88B04B !important;
+  // display: none;
+  // opacity: 0.3;
+  
 }
 
 .btn.navbar-btn {
@@ -120,7 +224,9 @@ body {
 // 	opacity: 0.5;
 // 	filter: brightness(300%);
 // 	filter: contrast(200%);
-	filter: grayscale(100%);
+// 	filter: grayscale(100%);
+// 	filter: sepia(100%);
+	filter: hue-rotate(90deg);
 	vertical-align: center;
   text-align: middle;
   padding: 0;
