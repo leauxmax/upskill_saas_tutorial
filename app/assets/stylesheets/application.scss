@@ -20,12 +20,23 @@ $grid-float-breakpoint: 0px;
 @import 'font-awesome-sprockets';
 @import 'font-awesome'; 
 
+.initial {
+  display:none;
+}
+
+
+.text-inner-container {
+  display: none;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 0px;
     height: 0;
-    overflow: hidden;
+    // overflow: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 
 .player {
@@ -44,7 +55,7 @@ $grid-float-breakpoint: 0px;
 
 .navbar-brand {
   background-color: black;//#88B04B;
-  color: white!important;
+  color: #ff00cc!important;
   -webkit-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
@@ -53,12 +64,13 @@ $grid-float-breakpoint: 0px;
 //   @include perspective(300px);
 // @include perspective-origin(30% 30%);
   // color: #006E51!important;
-  font-family: 'Freckle Face', cursive;
-  font-weight: 800;
+  font-family: 'Just Me Again Down Here', cursive;
+  font-weight: 500;
   
-  // margin-top: 5px;
-  // margin-right: 10px;
-  font-size: 141%;
+  margin-top: 7px;
+  margin-right: 10px;
+  font-size: 281%;
+  letter-spacing: 200%;
   border-radius: 50%;
   // padding-top: 15px;
   // padding-bottom: 15px;
@@ -78,6 +90,9 @@ $grid-float-breakpoint: 0px;
   // }
 }
 
+
+
+
 // Typography styles
 h1, h2, h3, body {
    font-family: 'Open Sans', sans-serif; 
@@ -91,6 +106,8 @@ h1, h2, h3, body {
   display: block;
   margin: 0 auto;
   background-color: black;//#88B04B//#91A8D0 !important;
+  
+  
   
   
   
