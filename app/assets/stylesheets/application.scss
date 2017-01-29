@@ -90,8 +90,42 @@ $grid-float-breakpoint: 0px;
   // }
 }
 
-
-
+.trumpTimer {
+  color: white;
+  
+}
+.navbar-kiss {
+  background-color: none!important; //black;//#88B04B;
+  color: #ff00cc!important;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+//   @include animation-direction(alternate-reverse);
+//   @include animation-fill-mode(backwards);
+//   @include perspective(300px);
+// @include perspective-origin(30% 30%);
+  // color: #006E51!important;
+  font-family: 'Just Me Again Down Here', cursive;
+  font-weight: 500;
+  
+  margin-top: 7px;
+  margin-right: 10px;
+  font-size: 281%;
+  letter-spacing: 200%;
+  border-radius: 50%;
+  // padding-top: 15px;
+  // padding-bottom: 15px;
+  // line-height: 20px;
+  position: relative;
+  display: inline block;
+  // padding: 10px 15px;
+  &:active &:hover &:focus{
+    -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+  text-annotation: none!important
+}
+}
 
 // Typography styles
 h1, h2, h3, body {

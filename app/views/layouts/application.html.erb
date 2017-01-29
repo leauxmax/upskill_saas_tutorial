@@ -43,7 +43,36 @@
   <% else %>
     <!--<a href="http://a.dilcdn.com/bl/wp-content/uploads/sites/6/2015/11/rebel-symbol.jpg">-->
     <!--<%= link_to "🖖", new_user_session_path, class: "btn navbar-btn" %>-->
-    <%= link_to "🚺", new_user_registration_path, class: "navbar-brand" %>
+    <%= link_to "🕯", new_user_registration_path, class: "navbar-kiss" %>
+    <div class = "navbar-brand">
+      <label id="minutes">00</label>:<label id="seconds">00</label>
+    </div>
+    <script type="text/javascript">
+        var minutesLabel = document.getElementById("minutes");
+        var secondsLabel = document.getElementById("seconds");
+        var totalSeconds = 0;
+        setInterval(setTime, 1000);
+
+        function setTime()
+        {
+            ++totalSeconds;
+            secondsLabel.innerHTML = pad(totalSeconds%60);
+            minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
+        }
+
+        function pad(val)
+        {
+            var valString = val + "";
+            if(valString.length < 2)
+            {
+                return "0" + valString;
+            }
+            else
+            {
+                return valString;
+            }
+        }
+    </script>
   <% end %>
  
 </div>
