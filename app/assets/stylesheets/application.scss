@@ -13,51 +13,60 @@
 *= require_tree .
 *= require_self
 */
+
 @import "bourbon";
 @import 'bootstrap-sprockets';
 $grid-float-breakpoint: 0px;
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
-@import 'font-awesome'; 
-
+@import 'font-awesome';
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 0px;
-    height: 0;
-    overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0px;
+  height: 0;
+  overflow: hidden;
 }
 
 .player {
   display: block;
   width: 100%;
 }
+.mail a {
+  // display:none;
+  text-decoration:none;
+       &:hover {
+      background-color: black !important;
+      text-decoration: none!important;
+      color: black !important;
+       }
+       float: right;
+       filter: grayscale(100%);
+//   position: relative;
+//   left: 50%;
+}
 
 //#88B04B greenery gr66n
 //#006E51 lush meadow
 //#5A7247 kale
 //#CFB095 hazelnut
-
 // #F7786B peach echo
 //#91A8D0 serenity
-
-
 .navbar-brand {
-  background-color: black;//#88B04B;
+  background-color: black; //#88B04B;
   color: white!important;
   -webkit-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
-//   @include animation-direction(alternate-reverse);
-//   @include animation-fill-mode(backwards);
-//   @include perspective(300px);
-// @include perspective-origin(30% 30%);
+  //   @include animation-direction(alternate-reverse);
+  //   @include animation-fill-mode(backwards);
+  //   @include perspective(300px);
+  // @include perspective-origin(30% 30%);
   // color: #006E51!important;
   // font-family: 'Open Sans', cursive;
   font-family: 'Orbitron', cursive;
   font-weight: 1100;
   font-weight: bold;
-  
   // margin-top: 5px;
   // margin-right: 10px;
   font-size: 141%;
@@ -68,11 +77,11 @@ $grid-float-breakpoint: 0px;
   position: relative;
   display: inline block;
   // padding: 10px 15px;
-  &:active &:hover &:focus{
+  &:active &:hover &:focus {
     -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
-}
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+  }
   // &:hover &:focus {
   //   -webkit-transition: none;
   // -ms-transition: none;
@@ -81,10 +90,32 @@ $grid-float-breakpoint: 0px;
 }
 
 // Typography styles
-h1, h2, h3, body {
-   font-family: 'Open Sans', sans-serif; 
-   font-size: golden-ratio(14px,  1);
-   color: #5A7247;
+h1,
+h2,
+h3,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: golden-ratio(14px, 1);
+  // color: #5A7247;
+}
+
+.nav,.navbar-nav,.navbar-right, .a {
+    &:hover, &:focus, &:active, &:target {
+      color: black !important;
+      text-decoration: none!important;
+  	}
+}
+
+.li {
+     
+     list-style-type: none;
+     &:hover, &:focus, &:active, &:target {
+      background-color: black !important;
+      text-decoration: none!important;
+      link:hover {
+    background-image:url("YOUR-SMALL-LINE-BOTTOM.png")
+}
+  	}
 }
 
 // Background gradient
@@ -92,47 +123,43 @@ h1, h2, h3, body {
   position: fixed;
   display: block;
   margin: 0 auto;
-  background-color: black;//#88B04B//#91A8D0 !important;
-  
-  
-  
-// background: #52ffd1; /* fallback for old browsers */
-// background: -webkit-linear-gradient(to left, #ffffff, #52ffd1); /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to left, #ffffff, #52ffd1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-  
-  
+  background-color: black!important; //#88B04B//#91A8D0 !important;
+}
+  // background: #52ffd1; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to left, #ffffff, #52ffd1); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to left, #ffffff, #52ffd1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   // background: #00c6ff; /* fallback for old browsers */
   // background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
   // background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
+
 .head {
-  background-color: black!important;//#88B04B !important;
+  background-color: black!important; //#88B04B !important;
 }
+
 body {
-  background-color: black!important;//#88B04B !important;
+  background-color: black!important; //#88B04B !important;
 }
 
 .btn.navbar-btn {
-  background-color: black;//#88B04B!important;
-  border-color: black;//#88B04B!important;
+  background-color: black; //#88B04B!important;
+  border-color: black; //#88B04B!important;
   width: 35px;
-	height: 35px;
-	line-height: 35px;
-// 	transparent: 90%!important;
-// 	border-color: #C66091;
-	font-size:180%;
-// 	opacity: 0.5;
-// 	filter: brightness(300%);
-// 	filter: contrast(200%);
-	filter: grayscale(100%);
-	vertical-align: center;
+  height: 35px;
+  line-height: 35px;
+  // 	transparent: 90%!important;
+  // 	border-color: #C66091;
+  font-size: 180%;
+  // 	opacity: 0.5;
+  // 	filter: brightness(300%);
+  // 	filter: contrast(200%);
+  filter: grayscale(100%);
+  vertical-align: center;
   text-align: middle;
   padding: 0;
-// 	&:hover, &:focus, &:active, &:target {
-//     color: #88B04B !important;
-// 	}
+  // 	&:hover, &:focus, &:active, &:target {
+  //     color: #88B04B !important;
+  // 	}
 }
 
 .form-group {
@@ -141,9 +168,9 @@ body {
 
 .btn-bigboyz {
   float: left;
-      position: relative;
-      left: 50%;
-      right: 50%;
+  position: relative;
+  left: 50%;
+  right: 50%;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -183,35 +210,44 @@ body {
   // line-height: 20px;
   position: relative;
   display: block;
-  background-color: #88B04B;//#ffd700 ;//#00b08b ;
+  background-color: #88B04B; //#ffd700 ;//#00b08b ;
   // transparent: 90%;
-  &:hover, &:focus, &:active, &:target {
+  &:hover,
+  &:focus,
+  &:active,
+  &:target {
     color: white!important;
     text-decoration: none;
     -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
-
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
   }
 }
+
+// .navbar-right {
+//   float: left;
+//   position: relative;
+//   left: 50%;
+//   margin-top: 50px;
+// }
 
 // .fixer-container {
 //       float: left;
 //       position: relative;
 //       left: -50%;
 // }
+.main-container {
+  float: left;
+  position: relative;
+  left: 50%;
+  margin-top: 50px;
+}
 
-  .main-container {
-      float: left;
-      position: relative;
-      left: 50%;
-      margin-top: 50px;
-    }
-    .fixer-container {
-      float: left;
-      position: relative;
-      left: -50%;
-    }
+.fixer-container {
+  float: left;
+  position: relative;
+  left: -50%;
+}
 
 .btn-momentum {
   width: 100px;
@@ -221,49 +257,45 @@ body {
   -webkit-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
-  border-color:#88B04B;
+  border-color: #88B04B;
   background-color: #88B04B;
   color: white!important;
-    text-decoration: none;
-    border-width: 0px;
-    text-align: center;
-    font-size: 241%;
-    line-height: 100px;
+  text-decoration: none;
+  border-width: 0px;
+  text-align: center;
+  font-size: 241%;
+  line-height: 100px;
   vertical-align: center;
 }
- 
+
 // .container {
 //   text-align:center;
 //   margin:0 20px;
 //   display: inline block;
 //   // width: 100%;
-  
 // }
-
 // btn primary
 // #ff00cc
-
-
-
-.btn-primary, .btn-primary:hover, .btn-primary:visited {
-    // position: static !important;
-    // z-index: 9000 !important;
-    background-color: #C66091; 
-
-    border-color: white;
-    border-radius: 50%;
-    font-size: 500%;
-    width: 500px;
-    height: 500px;
-    text-align: center;
-    // position: absolute;
-    // z-index: 1;
-    // white-space: nowrap;
-    // opacity: 0.75;
-    // padding: 10px 16px;
-    // font-size: 400%;
-    // line-height: 1.33;
-    // text-align: center;
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:visited {
+  // position: static !important;
+  // z-index: 9000 !important;
+  background-color: #C66091;
+  border-color: white;
+  border-radius: 50%;
+  font-size: 500%;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  // position: absolute;
+  // z-index: 1;
+  // white-space: nowrap;
+  // opacity: 0.75;
+  // padding: 10px 16px;
+  // font-size: 400%;
+  // line-height: 1.33;
+  // text-align: center;
   // &:after, &:before {
   //   border-width: 33px 10px 0 0 !important;
   // }
@@ -275,15 +307,13 @@ body {
   //   right: -10px;
   // //   border-color: #7DE3C8 transparent !important;;
   // }
-    
-    // &:hover {
-    // color: white;
-    // opacity: 0.75;
-    // box-shadow: none;
-    // border: none;
-    // }
+  // &:hover {
+  // color: white;
+  // opacity: 0.75;
+  // box-shadow: none;
+  // border: none;
+  // }
 }
-
 
 //btn-bigboy BIGBOY
 .btn-bigboy.btn-unstyled {
@@ -300,11 +330,10 @@ body {
   margin-top: -50px;
   // z-index: ;
   // opacity: 0.75;
-    // white-space: nowrap;
+  // white-space: nowrap;
   // z-index: .9000;
   z-index: -9000;
   max-width: 100%;
-  
 }
 
 // btn btn-primary btn-block center-block (TONGUE)
@@ -316,69 +345,83 @@ body {
   width: 333.3px;
   height: 250px;
   font-size: 904%;
-	border-color: #C66091;
-	border {z-index: 9000};
-	background-color: white;
-	text-align: middle;
-	vertical-align: middle;
-// 	margin-top: -100px;
-	color: white;
-// 	opacity: 0.5;
+  border-color: #C66091;
+  border {
+    z-index: 9000
+  }
+  ;
+  background-color: white;
+  text-align: middle;
+  vertical-align: middle;
+  // 	margin-top: -100px;
+  color: white;
+  // 	opacity: 0.5;
   opacity: 1.0;
   max-width: 100%;
-  margin-top: 20px;  
-	
-	&:hover, &:focus, &:active, &:target {
+  margin-top: 20px;
+  &:hover,
+  &:focus,
+  &:active,
+  &:target {
     color: #5cb85c !important;
     opacity: 1.0;
-    border {z-index: -9000};
+    border {
+      z-index: -9000
+    }
+    ;
     // background-color: #5cb85c !important;
-  //   width: 200px;
-	 // height: 200px;
-	}
-  &:active, &:target {
-  opacity: 1.0;
+    //   width: 200px;
+    // height: 200px;
+  }
+  &:active,
+  &:target {
+    opacity: 1.0;
   }
 }
 
-
-
 //btn-tongue
-
 .btn {
   color: #C66091 !important;
   background-color: white;
-  &:hover, &:focus, &:active, &:target {
+  &:hover,
+  &:focus,
+  &:active,
+  &:target {
     color: #5cb85c !important;
     // text-decoration: none
   }
 }
 
-.nav, .navbar-nav, .navbar-right  {
+.nav,
+.navbar-nav,
+.navbar-right {
   collapse: none;
-  
   // display:;
 }
 
-
-.btn, .btn-primary, .btn-large, .btn-block, .center-block {
+.btn,
+.btn-primary,
+.btn-large,
+.btn-block,
+.center-block {
   border-radius: 50%;
-//   width: 200px;
-// 	height: 200px;
-	border-color: #C66091;
-// 	margin-top: -20px;
-	&:hover, &:focus, &:active, &:target {
+  //   width: 200px;
+  // 	height: 200px;
+  border-color: #C66091;
+  // 	margin-top: -20px;
+  &:hover,
+  &:focus,
+  &:active,
+  &:target {
     color: #5cb85c !important;
     // background-color: #5cb85c !important;
-  //   width: 200px;
-	 // height: 200px;
-	  
-	  
+    //   width: 200px;
+    // height: 200px;
     // background-color: #5cb85c;
     // border-color: #ff00cc;
     // // opacity: 0.75;
     // box-shadow: 10px 10px 5px #888888;
-    }
+  }
   // &:active {
   //   color: #ff00cc !important;
   //   background-color: #C66091;
@@ -386,16 +429,16 @@ body {
   // }
 }
 
-
 //btn success
-
-.btn-success, .btn-success:hover, .btn-success:visited .btn-success:active:focus {
-    background-color: #5cb85c;
-    // &:hover {
-    // color: white;
-    // opacity: 0.75;
-    // box-shadow: none;
-    // }
+.btn-success,
+.btn-success:hover,
+.btn-success:visited .btn-success:active:focus {
+  background-color: #5cb85c;
+  // &:hover {
+  // color: white;
+  // opacity: 0.75;
+  // box-shadow: none;
+  // }
 }
 
 // .btn-primary:active, {
@@ -403,9 +446,8 @@ body {
 //   border: #ff00cc;
 //   // margin-top: -2px;
 // }
-
 .btn-success:active {
-    background-color: #ffd700 !important;
+  background-color: #ffd700 !important;
   //   box-shadow: none;
   //   border: #7d00ff;
   //   color: #ffffff !important;
@@ -413,21 +455,15 @@ body {
   // border-color: #494F57 !important;
 }
 
-
 .btn-default {
   color: #ff00cc;
   border-radius: 50%;
 }
 
-
 // Nav styles
 .navbar {
   border: none;
 }
-
-
-
-
 
 // SPOTIFY plyr
 // .navbar-music {
@@ -437,7 +473,6 @@ body {
 //     opacity: 0.08;
 //   }
 // }
-
 // Homepage styles
 .home-callout {
   color: #ff00cc;
@@ -450,21 +485,22 @@ body {
   position: absolute;
   width: 100%;
 }
-.alert-notice, .alert-alert {
+
+.alert-notice,
+.alert-alert {
   text-align: center;
   background: rgba(255, 255, 255, 0.3);
   border-color: rgba(255, 255, 255, 0.5);
   margin-top: -14px;
-} 
+}
 
 .content {
   font-family: 'Open Sans', sans-serif;
-  color:#ff00cc;
+  color: #ff00cc;
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 100px;
 }
-
 
 .home-signup-links {
   margin-top: 30px;
@@ -475,14 +511,14 @@ body {
   height: 200px;
   margin: 0 auto;
   padding-top: 15px;
-  position: relative; 
+  position: relative;
   background: green;
   color: white;
   font-size: 11px;
   letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
-  list-style:none;
+  list-style: none;
 }
 
 .sheer {
@@ -502,35 +538,22 @@ body {
   // }
 }
 
-
 //COOL bTNs
-
-
-
 // .btn-bigboy.btn-unstyle {
 //   font-size: 904%;
 //   margin-top: -150px;
 // }
-
-
-
-
 // .navbar-nav.navbar-right:last-child {
 //   margin-right: -15px !important;
 // }
-
-
-
 // .field, .form-group {
 //   background-color: white;
 //   border-color: pink;
 // }
-
 // .well, {
 //   background-color: #C66091;
 //   border-color: #C66091;
 // }
-
 // .btn.btn-blockz.btn-center {
 //   height: 200px;
 //   width: 266px;
@@ -544,26 +567,25 @@ body {
 // // 	border-color: #00b08b;
 // // 	border-width: 2px;
 // }
-
 .btn-blockz {
   text-decoration: none!important;
   font-size: 200%;
   &:hover &:active {
     text-decoration: none!important;
   }
-//   width:100px;
-//   height:100px;
-//   font-size: 400%;
-//   margin-top: -40px;
-//   // margin: 0 auto;
-// //   text-align: center;
-// // 	vertical-align: center;
-// //   display: block;
-// //   padding:0;
-//   vertical-align: center;
-//   text-align: middle;
-//   padding: 0;
-//   color: black;
+  //   width:100px;
+  //   height:100px;
+  //   font-size: 400%;
+  //   margin-top: -40px;
+  //   // margin: 0 auto;
+  // //   text-align: center;
+  // // 	vertical-align: center;
+  // //   display: block;
+  // //   padding:0;
+  //   vertical-align: center;
+  //   text-align: middle;
+  //   padding: 0;
+  //   color: black;
 }
 
 // .btn.btn-jig {
@@ -571,26 +593,23 @@ body {
 //   font-size: 10%;
 //   // max-width: 100%;
 // }
-
 // .btn-jig {
-  // background-color: transparent;
-  // // font-size: 430%!important;
-  // vertical-align: center;
-  // // text-align: center;
-  // padding: 0;
-  // // position: float;
-  // margin: 0 auto;
-  // // display: block;
-  // width: 750px;
-  // height: 100px;
-  // white-space: nowrap;
-  // // overflow: hidden;
-  // // text-overflow: ellipsis ;
-  // max-width: 500px;
-  // border-radius: 0%;
-  
+// background-color: transparent;
+// // font-size: 430%!important;
+// vertical-align: center;
+// // text-align: center;
+// padding: 0;
+// // position: float;
+// margin: 0 auto;
+// // display: block;
+// width: 750px;
+// height: 100px;
+// white-space: nowrap;
+// // overflow: hidden;
+// // text-overflow: ellipsis ;
+// max-width: 500px;
+// border-radius: 0%;
 // }
-
 .btn-jig {
   background-color: #88B04B;
   font-size: 200% !important;
@@ -611,50 +630,45 @@ body {
   height: 200px;
 }
 
-
 //// settings
 $font-size:20px; // base size
 $size:20em;
 $background-color:#eaeaee;
 $rpm:33.5;
 $center-size:40%;
-
 //colors
 $highlight-color:#eef;
 $print-white:#dde;
-$print-1:rgb(77,67,145);
-$print-2:rgb(207,75,145);
-
-
+$print-1:rgb(77, 67, 145);
+$print-2:rgb(207, 75, 145);
 //// here be dragons
 // animation duration
 $t:60s/$rpm;
-
 // create grooves
 $grooves:();
 $grooves-loop-size:70px;
 $grooves-steps:59;
-@if($grooves-steps % 2 == 0){
-  $grooves-steps:$grooves-steps+1;
+@if($grooves-steps % 2==0) {
+  $grooves-steps: $grooves-steps+1;
 }
+
 $grooves-step-size:$grooves-loop-size/$grooves-steps;
 $grooves-color:black;
 $grooves-variation:0.3;
 $grooves-max-transparency:0.5;
-
-@for $i from 1 through $grooves-steps{
-  $step:$grooves-step-size*$i;
-  $transparency:1;
-  $cur-variation:random()*$grooves-variation;
-  $transparency:$transparency - $cur-variation;
-  @if($i % 2==1){
-    $transparency:1-$transparency;
+@for $i from 1 through $grooves-steps {
+  $step: $grooves-step-size*$i;
+  $transparency: 1;
+  $cur-variation: random()*$grooves-variation;
+  $transparency: $transparency - $cur-variation;
+  @if($i % 2==1) {
+    $transparency: 1-$transparency;
   }
   $transparency:1-((1-$transparency)*$grooves-max-transparency);
+  $grooves:append($grooves, (transparentize($grooves-color, $transparency) $step), comma);
+}
 
-  $grooves:append($grooves,(transparentize($grooves-color,$transparency) $step),comma);
-};
-
+;
 // create tracks
 $tracks:();
 $tracks-num:7;
@@ -663,154 +677,128 @@ $tracks-start:30%;
 $track-size:$tracks-avail-size/$tracks-num;
 $track-variation:3%;
 $track-ridge-size:1%;
-$track-ridge-color:rgba(0,0,0,0.3);
+$track-ridge-color:rgba(0, 0, 0, 0.3);
 $track-ridge-blur:0.2%;
-@for $i from 1 through $tracks-num{
-  $cur-pos:$tracks-start+($i*$track-size);
-  $cur-pos:$cur-pos+(random()*$track-variation);
-  $tracks:append($tracks,(transparentize($track-ridge-color,1) $cur-pos - $track-ridge-blur),comma);
-  $tracks:append($tracks,($track-ridge-color $cur-pos),comma);
-  $cur-pos:$cur-pos+$track-ridge-size;
-  $tracks:append($tracks,($track-ridge-color $cur-pos),comma);
-  $tracks:append($tracks,(transparentize($track-ridge-color,1) $cur-pos+$track-ridge-blur),comma);
+@for $i from 1 through $tracks-num {
+  $cur-pos: $tracks-start+($i*$track-size);
+  $cur-pos: $cur-pos+(random()*$track-variation);
+  $tracks: append($tracks, (transparentize($track-ridge-color, 1) $cur-pos - $track-ridge-blur), comma);
+  $tracks: append($tracks, ($track-ridge-color $cur-pos), comma);
+  $cur-pos: $cur-pos+$track-ridge-size;
+  $tracks: append($tracks, ($track-ridge-color $cur-pos), comma);
+  $tracks: append($tracks, (transparentize($track-ridge-color, 1) $cur-pos+$track-ridge-blur), comma);
 }
 
 // animations
-@keyframes wiggle{
-  0%{
-    transform:rotate(0);
+@keyframes wiggle {
+  0% {
+    transform: rotate(0);
   }
-  100%{
-    transform:rotate(0.5deg);
-  }
-}
-@keyframes zoom{
-  0%{
-    opacity:0.5;
-    transform:scale(1.4);
-  }
-  50%{
-    opacity:0.8;
-    transform:scale(1.2) rotate(180deg);
-  }
-  100%{
-    opacity:0.5;
-    transform:scale(1) rotate(360deg);
-  }
-}
-@keyframes spin{
-  0%{
-    transform:rotate(0);
-  }
-  100%{
-    transform:rotate(360deg);
+  100% {
+    transform: rotate(0.5deg);
   }
 }
 
-
-body{
-  background:$background-color;
-  font-size:$font-size;
+@keyframes zoom {
+  0% {
+    opacity: 0.5;
+    transform: scale(1.4);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2) rotate(180deg);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1) rotate(360deg);
+  }
 }
-.disco{
-  position:absolute;
-  left:50%;
-  top:50%;
-  margin-left:-$size/2;
-  margin-top:-$size/2;
-  width:$size;
-  height:$size;
-  
-  background: 
-    // dark areas on both ends
-    radial-gradient(circle closest-side, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 35.5%, rgba(0,0,0,0) 96%, rgba(0,0,0,1) 96.5%),
-    // tracks
-    radial-gradient(circle closest-side, $tracks),
-    // highlight
-    conic-gradient(black 40deg, $highlight-color 42deg,black 44deg, black 219deg, $highlight-color 222deg, $highlight-color 223deg,black 228deg),
-    // grooves
-    repeating-radial-gradient($grooves),
-    // weak lighting
-    conic-gradient(
-      transparentize(white,1) 80deg,
-      transparentize(white,0.96) 90deg,
-      transparentize(white,1) 95deg,
-      transparentize(white,1) 260deg,
-      transparentize(white,0.96) 270deg,
-      transparentize(white,1) 285deg
-    ),
-    // strong lighting
-    conic-gradient(
-      transparentize(white,1),
-      transparentize(white,0.78) 20deg,
-      transparentize(white,0.71) 40deg,
-      transparentize(white,1) 70deg,
-      transparentize(white,1) 180deg,
-      transparentize(white,0.82) 200deg,
-      transparentize(white,0.85) 210deg,
-      transparentize(white,1) 250deg
-    ), 
-    black;
-  background-blend-mode:normal,normal,color-dodge,normal,normal;
-  animation:wiggle 30ms linear infinite alternate;
-  border-radius:100%;
-  overflow:hidden;
-  
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background: $background-color;
+  font-size: $font-size;
+}
+
+.disco {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -$size/2;
+  margin-top: -$size/2;
+  width: $size;
+  height: $size;
+  background: // dark areas on both ends
+  radial-gradient(circle closest-side, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 35.5%, rgba(0, 0, 0, 0) 96%, rgba(0, 0, 0, 1) 96.5%), // tracks
+  radial-gradient(circle closest-side, $tracks), // highlight
+  conic-gradient(black 40deg, $highlight-color 42deg, black 44deg, black 219deg, $highlight-color 222deg, $highlight-color 223deg, black 228deg), // grooves
+  repeating-radial-gradient($grooves), // weak lighting
+  conic-gradient( transparentize(white, 1) 80deg, transparentize(white, 0.96) 90deg, transparentize(white, 1) 95deg, transparentize(white, 1) 260deg, transparentize(white, 0.96) 270deg, transparentize(white, 1) 285deg), // strong lighting
+  conic-gradient( transparentize(white, 1), transparentize(white, 0.78) 20deg, transparentize(white, 0.71) 40deg, transparentize(white, 1) 70deg, transparentize(white, 1) 180deg, transparentize(white, 0.82) 200deg, transparentize(white, 0.85) 210deg, transparentize(white, 1) 250deg), black;
+  background-blend-mode: normal, normal, color-dodge, normal, normal;
+  animation: wiggle 30ms linear infinite alternate;
+  border-radius: 100%;
+  overflow: hidden;
   // zoom anim thing
-  &::before{
-    content:"  ";
-    position:absolute;
-    width:50%;
-    height:50%;
-    left:50%;
-    top:50%;
-    width:$center-size;
-    height:$center-size;
-    margin-left:-$center-size/2;
-    margin-top:-$center-size/2;
-    background:repeating-radial-gradient($grooves);
-    border-radius:100%;
-    animation:zoom $t linear infinite;
-    
+  &::before {
+    content: "  ";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    width: $center-size;
+    height: $center-size;
+    margin-left: -$center-size/2;
+    margin-top: -$center-size/2;
+    background: repeating-radial-gradient($grooves);
+    border-radius: 100%;
+    animation: zoom $t linear infinite;
   }
-
   // inner label thing
-  &::after{
+  &::after {
     font-size: 200%;
     content: "🤘";
-    display:block;
-    position:absolute;
-    left:50%;
-    top:50%;
-    width:$center-size;
-    height:$center-size;
-    margin-left:-$center-size/2;
-    margin-top:-$center-size/2;
-    border-radius:100%;
-    color:$print-white;
-    text-align:center;
-    line-height:3em;
-    font-weight:bold;
-    background:radial-gradient(circle closest-side, $background-color 8%, transparentize($background-color,1) 9%, transparent 85%, $print-white 85%, $print-white 90%, transparent 90%),
-      conic-gradient($print-1 25%, $print-2 0 50%, $print-1 0 75%, $print-2 0);
-    background-size:100%, 3em 3em;
-    animation:spin $t linear infinite;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: $center-size;
+    height: $center-size;
+    margin-left: -$center-size/2;
+    margin-top: -$center-size/2;
+    border-radius: 100%;
+    color: $print-white;
+    text-align: center;
+    line-height: 3em;
+    font-weight: bold;
+    background: radial-gradient(circle closest-side, $background-color 8%, transparentize($background-color, 1) 9%, transparent 85%, $print-white 85%, $print-white 90%, transparent 90%), conic-gradient($print-1 25%, $print-2 0 50%, $print-1 0 75%, $print-2 0);
+    background-size: 100%, 3em 3em;
+    animation: spin $t linear infinite;
   }
 }
 
 .responsive-video {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 60px; overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 60px;
+  overflow: hidden;
 }
-
 
 .responsive-video iframe,
 .responsive-video object,
 .responsive-video embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
