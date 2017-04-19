@@ -1,14 +1,14 @@
 <div class="container">
   <div class="row">
     <div class="row">
-      <h2 class="text-center", style="font-size:610%; margin-bottom: -44px;  z-index: +1; position:relative;">💋</h2>
+      <h2 class="text-center", style="font-size:420%; margin-bottom: -48px;  z-index: +1; position:relative;">💋</h2>
     </div>
     <!--<h1 style="font-size:610%; margin-bottom: -44px;">💋<h1>-->
-    <div class="col-md-4 col-md-offset-4">
-      <div class="well", style="z-index: -1">  
+    <div class="col-md-6 col-md-offset-3">
+      <div class="well", style="z-index: -1, color: white">  
         <%= form_for @contact do |f| %>
           <div class="form-group">
-            <%= f.label :name %>
+            <%= f.label :from %>
             <%= f.text_field :name, class: 'form-control' %>
           </div> 
           
@@ -18,11 +18,11 @@
           </div> 
           
           <div class="form-group">  
-            <%= f.label :comments %>
+            <%= f.label :wut %>
             <%= f.text_area :comments, class: 'form-control' %>
           </div> 
           
-            <%= f.submit 'Submit', class: 'btn btn-default' %>
+            <%= f.submit 'Ayyy', class: 'form-group form-group-btn' %>
         <% end %>
       </div>
     </div>
