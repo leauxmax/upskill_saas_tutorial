@@ -1,28 +1,27 @@
 <div class="container">
   <div class="row">
     <div class="row">
-      <h2 class="text-center", style="font-size:420%; margin-bottom: -48px;  z-index: +1; position:relative;">💋</h2>
+      <!--<h2 class="text-center", style="font-size:420%; margin-bottom: -48px;  z-index: +1; position:relative;">sub</h2>-->
     </div>
-    <!--<h1 style="font-size:610%; margin-bottom: -44px;">💋<h1>-->
     <div class="col-md-6 col-md-offset-3">
-      <div class="well", style="z-index: -1, color: white">  
+      <div class="", style="z-index: -1, color: blue">  
         <%= form_for @contact do |f| %>
-          <div class="form-group">
-            <%= f.label :from %>
-            <%= f.text_field :name, class: 'form-control' %>
-          </div> 
+          <!--<div class="form-group">-->
+          <!--  <%= f.label :from %>-->
+          <!--  <%= f.text_field :name, class: 'form-control' %>-->
+          <!--</div> -->
           
           <div class="form-group">
-            <%= f.label :email %>
+            <%= f.label :from, class: 'navbar-brand' %>
             <%= f.text_field :email, class: 'form-control' %>
           </div> 
           
           <div class="form-group">  
-            <%= f.label :wut %>
+            <%= f.label :🎬, class: 'navbar-brand' %>
             <%= f.text_area :comments, class: 'form-control' %>
           </div> 
           
-            <%= f.submit 'Ayyy', class: 'form-group form-group-btn' %>
+            <%= f.submit 'Send', class: 'navbar-brand form-group-btn' %>
         <% end %>
       </div>
     </div>
