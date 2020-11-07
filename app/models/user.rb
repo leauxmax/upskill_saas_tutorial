@@ -5,6 +5,17 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   belongs_to :plan
   has_one :profile
+<<<<<<< HEAD
+=======
+  def email_required?
+    false
+  end
+
+  def email_changed?
+    false
+  end
+
+>>>>>>> NOW
   
   attr_accessor :stripe_card_token
   # If Pro user passes validations (email, password, etc),

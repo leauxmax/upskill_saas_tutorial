@@ -2,25 +2,27 @@
   <%= devise_error_messages! %>
 
   <%= hidden_field_tag 'plan', params[:plan]%>
-  <div class="field form-group">
-    <%= f.label :email %><br />
+  <div class="field form-group" style="font-size:250%;">
+    <%= label_tag :email, "📥" %><br />
+    <!--<%= f.label :email %><br />-->
     <%= f.email_field :email, autofocus: true, class: 'form-control' %>
   </div>
 
-  <div class="field form-group">
-    <%= f.label :password %>
+  <div class="field form-group" style="font-size:250%;">
+    <%= label_tag :password, "🔑" %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <!--<em>(<%= @minimum_password_length %> characters minimum)</em>-->
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
   </div>
 
-  <div class="field form-group">
-    <%= f.label :password_confirmation %><br />
+  <div class="field form-group" style="font-size:250%; color:#C66091!important;">
+    <%= label_tag :password_confirmation, "🔑🔁" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
   </div>
 
-  <div class="actions form-group">
-    <%= f.submit "Sign up", class: 'btn btn-success' %>
+  <div class="actions form-group" >
+    <%= f.submit "🤘", class: 'btn-momentum' %>
   </div>
 <% end %>
+
